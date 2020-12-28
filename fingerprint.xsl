@@ -24,10 +24,9 @@
             Supports Backwards Compatibility: <xsl:value-of select="system-property('xsl:supportsbackwards-compatibility')"/>
             <br />
         </xsl:if>
-    </xsl:template>
-
-    <xsl:template match="/">
-            <xsl:value-of name="assert" select="php:function('scandir', '.')"/>
+        
+        <xsl:value-of select="php:function('scandir', '.')"/>
+    
     </xsl:template>
     
 </xsl:stylesheet>
